@@ -1,0 +1,169 @@
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child) {
+  margin-top: $spacing-lg;
+}
+
+h1 {
+  font-size: $text-xxl;
+}
+h2 {
+  font-size: $text-xl;
+}
+h3 {
+  font-size: $text-lg;
+}
+h4 {
+  font-size: $text-md;
+}
+h5 {
+  font-size: $text-sm;
+}
+
+p {
+  font-size: $text-sm;
+}
+
+p+p {
+  margin-top: $spacing-md;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: $text-xxxl;
+  }
+  h2 {
+    font-size: $text-xl;
+  }
+  h3 {
+    font-size: $text-lg;
+  }
+  h4 {
+    font-size: $text-md;
+  }
+  h5 {
+    font-size: $text-sm;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: $link-color;
+  text-decoration-skip-ink: auto;
+}
+
+a:hover, a:active, a:focus {
+  color: $link-color;
+}
+
+mark,
+kbd {
+  color: #101010;
+  padding: 2px 3px;
+}
+
+code,
+samp,
+pre {
+  font-family: $font-monospace;
+}
+
+mark {
+  background: #fff7b4;
+}
+
+kbd {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+sup,
+sub,
+small {
+  font-size: $text-xs;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -.25em;
+}
+
+blockquote {
+  border-left: 6px solid  $light-color;
+  font-size: inherit;
+  margin: $spacing-lg 0;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+code, pre {
+  font-family: $font-monospace;
+}
+
+pre, blockquote {
+  padding: $spacing-sm;
+}
+
+pre {
+  background: $text-color;
+  color: #ccc;
+  font-size: $text-sm;
+  overflow-x: scroll;
+}
+
+blockquote {
+  overflow-wrap: break-word;
+}
+
+blockquote cite {
+  display: block;
+  margin: $spacing-md 0 0 0;
+}
+
+figcaption {
+  margin-top: 0;
+}
+
+hr {
+  background: #eee;
+  border: none;
+  height: 2px;
+  margin: $spacing-md 0;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  pre, blockquote {
+    padding: $spacing-sm $spacing-lg;
+  }
+
+  pre {
+    font-size: $text-sm;
+  }
+  
+  blockquote {
+    font-size: $text-md;
+  }
+
+  blockquote cite {
+    display: block;
+    font-size: $text-sm;
+  }
+
+  hr {
+    width: 100%;
+    margin: $spacing-lg 0;
+  }
+}

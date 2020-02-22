@@ -1,0 +1,117 @@
+body {
+  background: $background;
+  color: $text-color;
+  font-family: $font-primary;
+  font-size: $default-size;
+  line-height: $default-line-height;
+}
+
+
+// Layout
+
+.container {
+  max-width: 95%;
+  margin: $spacing-md auto;
+  
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: $container-tablet;
+}
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: $container-desktop;
+  }
+}
+
+
+/* 
+** Lists
+*/
+
+ul,
+ol {
+  line-height: $default-line-height * $text-scale;
+}
+
+ul li,
+ol li {
+  margin: 0;
+}
+
+ul li ul, 
+ol li ol {
+  margin: 0;
+}
+
+/* 
+** Tables
+*/
+
+.table-container {
+  margin: $spacing-md 0;
+  max-width: 100%;
+  overflow: auto;
+}
+
+table {
+  border-spacing: 0;
+  font-size: $text-xs;
+  line-height: 1.6;
+  margin: 0;
+  white-space: nowrap;
+  width: 100%;
+}
+
+thead,
+tfoot,
+tbody {
+  max-width: 100%;
+}
+
+thead th {
+  border-bottom: 2px solid #303030;
+  padding-bottom: $spacing-sm;
+}
+
+tfoot th {
+  border-top: 2px solid #303030;
+  padding-top: $spacing-sm;
+}
+
+td {
+  border-bottom: 1px solid #eee;
+  color: #404040;
+  font-size: $text-sm;
+}
+
+th,
+td {
+  padding: $spacing-sm 0;
+  text-align: left;
+}
+
+th+th,
+td+td {
+  padding: 0 $spacing-sm;
+}
+
+@media (min-width: 600px) { 
+  .table-container {
+    margin: $spacing-lg 0;
+}
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: $text-sm;
+    max-width: 100%;
+    width: 100%;
+  }
+  th,
+  td {
+    padding: $spacing-sm 0;
+}
+}

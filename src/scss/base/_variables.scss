@@ -1,0 +1,41 @@
+// Modular Typography
+$default-size: 1em;
+$text-scale: 1.2;
+$default-line-height: 1.4;
+$text-xs: $default-size / $text-scale;
+$text-sm: $default-size;
+$text-md: $text-sm * $text-scale;
+$text-lg: $text-md * $text-scale;
+$text-xl: $text-lg * $text-scale;
+$text-xxl: $text-xl * $text-scale;
+$text-xxxl: $text-xxl * $text-scale;
+
+// Fonts
+$font-primary: sans-serif;
+$font-secondary: serif;
+$font-monospace: monospace;
+
+// Layout
+$container-mobile: 90%;
+$container-tablet: 30em;
+$container-desktop: 34em;
+
+//Spacing
+$spacing-sm: $default-size * $text-scale;
+$spacing-md: $spacing-sm * $text-scale;
+$spacing-lg: $spacing-md * $text-scale;
+
+// Colors
+$background: transparent;
+$text-color: #5a5a5a;
+$light-color: #c4c4c4;
+$dark-color: #2e2e2e;
+$link-color: #487abb;
+
+@media (prefers-color-scheme: dark) {
+  $background: #2b2a2a;
+  $text-color: #e4e4e4;
+  $light-color: #3b3b3b;
+  $dark-color: #a5a4a4;
+  $link-color: #8eb8f0;
+}

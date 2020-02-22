@@ -1,0 +1,17 @@
+{
+  "name": "sassbook",
+  "version": "1.0.0",
+  "description": "Like Notebook, but Sassier.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch src/scss -o dist/css"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Ethan Shutt",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
