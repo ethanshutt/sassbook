@@ -31,11 +31,3 @@ $text-color: #5a5a5a;
 $light-color: #c4c4c4;
 $dark-color: #2e2e2e;
 $link-color: #487abb;
-
-@media (prefers-color-scheme: dark) {
-  $background: #2b2a2a;
-  $text-color: #e4e4e4;
-  $light-color: #3b3b3b;
-  $dark-color: #a5a4a4;
-  $link-color: #8eb8f0;
-}
