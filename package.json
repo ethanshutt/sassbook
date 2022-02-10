@@ -12,6 +12,6 @@
   "author": "Ethan Shutt",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
